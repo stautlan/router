@@ -43,7 +43,7 @@
 
 /* me */
 
-.div-main {
+/* .div-main {
   background: rgb(78, 13, 109);
   padding: 2%;
 }
@@ -53,7 +53,6 @@
   background: rgb(134, 24, 185);
   width: 100%;
   float: left;
-  /* margin: 10px 0; */
   position: relative;
 }
 
@@ -66,7 +65,6 @@
 
 .divider {
   background: rgb(78, 13, 109);
-  /* height: 50px; */
   margin: 120px;
 }
 
@@ -78,11 +76,6 @@
 
 .nav.active {
   text-decoration: underline;
-  /* border-bottom-width: 2px; */
-  /* padding: 10px; */
-  /* transition: all color 1s; */
-  /* background-color: white; */
-  /* background: green; */
 }
 
 h1, 
@@ -90,4 +83,4 @@ p {
   color: white;
   font-size: larger;
   text-align: left;
-}
+} */
