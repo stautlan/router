@@ -1,14 +1,15 @@
 import './App.css'
-import { NavLink, Routes, Route } from 'react-router-dom'
+import { NavLink, Routes, Route, Link } from 'react-router-dom'
 import {HomePage} from './components/HomePage'
 import {DriftPage} from './components/DriftPage'
 import {TimeAttackPage} from './components/TimeAttackPage'
 import {ForzaPage} from './components/ForzaPage'
+import './css/index_c.css'
 
 const linkStyle = {
   margin: "1rem",
   textDecoration: "none",
-  color: "white"
+  color: "blue"
 }
 
 function App() {
@@ -34,6 +35,10 @@ function App() {
           path='ForzaPage'
           element={<ForzaPage className='page'/>}
         />
+        <Route
+          path='*'
+          element={<Page404 />}
+        />
       </Routes>
     </div>
   )
@@ -51,7 +56,9 @@ const Header = () => {
 }
 
 const Page404 = () => {
-
+  return (
+    <p>Страница не найдена. Перейти на <Link to='/' style={linkStyle}>главную</Link></p>
+  )
 }
 
 const Redirect = () => {
