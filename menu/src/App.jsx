@@ -4,7 +4,7 @@ import {HomePage} from './components/HomePage'
 import {DriftPage} from './components/DriftPage'
 import {TimeAttackPage} from './components/TimeAttackPage'
 import {ForzaPage} from './components/ForzaPage'
-import './css/index_c.css'
+// import './css/index_c.css'
 
 const linkStyle = {
   margin: "1rem",
