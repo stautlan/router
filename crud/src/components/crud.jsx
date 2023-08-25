@@ -29,7 +29,6 @@ export const getNoteId = async (id) => {
 // NEW
 export const postNote = async (note) => {
     try {
-        debugger
         const response = await fetch('http://localhost:7070/posts', {
             method: 'POST',
             body: JSON.stringify({
@@ -40,11 +39,11 @@ export const postNote = async (note) => {
             }),
             headers: { 'Content-type': 'application/json;charset=UTF-8' }
         });
-        if (!response.ok) {
+        /*if (!response.ok) {
             throw new Error('error post')
         }
         const result = response.json();
-        return result;
+        return result;*/
     } catch (er) {
         console.error('postNote error: ' + er);
     }
@@ -59,11 +58,11 @@ export const editNote = async (note) => {
             noteId: note.id,
             headers: {"Content-type": "application/json;charset=UTF8"}
         });
-        if (!response.ok) {
+        /*if (!response.ok) {
             throw new Error('error edit');
         }
         const result = response.json();
-        return result;
+        return result;*/
     } catch (er) {
         console.error('editNote error: ' + er);
     }
@@ -72,15 +71,14 @@ export const editNote = async (note) => {
 // DELETE
 export const deleteNote = async (id) => {
     try {
-        debugger
-        const response = await fetch(`http://localhost:7070/${id}`, {
+        const response = await fetch(`http://localhost:7070/posts/${id}`, {
             method: 'DELETE'
         });
-        if (!response.ok) {
+        /*if (!response.ok) {
             throw new Error('error delete');
         }
         const result = response.json();
-        return result;
+        return result;*/
     } catch (er) {
         console.log('deleteNote error: ' + er);
     }

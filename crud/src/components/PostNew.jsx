@@ -12,7 +12,7 @@ const PostNew = () => {
   const handlerSubmit = (event) => {
     console.log('Submitted: ' + JSON.stringify(message));
     event.preventDefault();
-    postNote(message);
+    //postNote(message);
   }
   
   const handlerAutor = (event) => {
